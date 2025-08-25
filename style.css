@@ -62,17 +62,38 @@ a:focus { outline: 2px solid #05676e; }
 
 .button {
   display: inline-block;
-  padding: 0.5em 1em;
-  border: 2px solid #05676e;
-  border-radius: 5px;
+  padding: 0.5em 1.25em;
+  margin: 0 0.5em;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
   text-decoration: none;
-  color: #05676e;
-  background: #fff;
-  transition: background 0.3s ease;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.button:hover {
-  background: #05676e;
-  color: #fff;
+.button.work {
+  background-color: #E5F1FF;
+  color: #19284D;
 }
+.button.work:hover {
+  background-color: #516287;
+}
+
+.button.about {
+  background-color: #E5F1FF;
+  color: #19284D;
+}
+.button.about:hover {
+  background-color: #516287;
+}
+
+.button.contact {
+  background-color: #E5F1FF;
+  color: #19284D;
+}
+.button.contact:hover {
+  background-color: #516287;
+}
+
 
