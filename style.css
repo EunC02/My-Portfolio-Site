@@ -55,3 +55,24 @@ img {
   height: auto;
 }
 
+a:link { color: #05676e; }
+a:visited { color: #489c79; }
+a:hover { color: #333; text-decoration: underline; }
+a:focus { outline: 2px solid #05676e; }
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 2px solid #05676e;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #05676e;
+  background: #fff;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #05676e;
+  color: #fff;
+}
+
