@@ -63,6 +63,8 @@ a:focus { outline: 2px solid #05676e; }
 .button {
   display: inline-block;
   padding: 0.5em 1.25em;
+  border: #323338;
+  border-width: 0.2em;
   margin: 0 0.5em;
   font-family: 'Nunito', sans-serif;
   font-size: 1em;
