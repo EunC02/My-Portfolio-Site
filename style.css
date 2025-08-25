@@ -9,15 +9,14 @@ Light Blue - #E5F1FF
 
 body {
   background-color: #FFFFFF;
+  color: #323338;
+  font-family: 'Domine', sans-serif
+}
+
+h1, h2, h3, h4 {
   color: #516287;
-}
-
-body {
-  font-family: 'Nunito', sans-serif;
-}
-
-h1, h2, h3 {
-  font-family: 'Domine', sans-serif; line-height: 1.4;
+  font-family: 'Domine', sans-serif;
+  line-height: 1.4;
 }
 
 h1 {
@@ -108,4 +107,40 @@ a:focus { outline: 2px solid #05676e; }
   width: 150px; 
   height: auto; 
   display: block
+}
+
+.button.cv-button {
+  display: inline-block;
+  padding: 0.5em 1.25em;
+  border: 0.2em solid #323338;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  color: #323338;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button.cv-button:hover {
+  background-color: #323338;
+  color: #FFFFFF;
+}
+
+.button.email-button {
+  display: inline-block;
+  padding: 0.5em 1.25em;
+  border: 0.2em solid #323338;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  color: #323338;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button.email-button:hover {
+  background-color: #323338;
+  color: #FFFFFF;
 }
