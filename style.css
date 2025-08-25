@@ -1,0 +1,51 @@
+/*
+Colors used:
+Light Grey - #F0F0F0;
+Dark Grey - #323338;
+Blue-Grey - #516287;
+Dark Blue - #19284D;
+Light Blue - #E5F1FF
+*/
+
+body {
+  background-color: #F0F0F0;
+  color: #516287;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Nunito', sans-serif; line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
