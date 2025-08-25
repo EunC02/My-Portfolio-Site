@@ -78,6 +78,7 @@ a:focus { outline: 2px solid #05676e; }
 }
 .button.work:hover {
   background-color: #516287;
+  color: #E5F1FF;
 }
 
 .button.about {
@@ -86,6 +87,7 @@ a:focus { outline: 2px solid #05676e; }
 }
 .button.about:hover {
   background-color: #516287;
+  color: #E5F1FF;
 }
 
 .button.contact {
@@ -94,6 +96,7 @@ a:focus { outline: 2px solid #05676e; }
 }
 .button.contact:hover {
   background-color: #516287;
+  color: #E5F1FF;
 }
 
 
