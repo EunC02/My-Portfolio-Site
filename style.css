@@ -7,6 +7,16 @@ Dark Blue - #19284D;
 Light Blue - #E5F1FF
 */
 
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #E5F1FF;
+  padding: 10px;
+  margin: 10px;
+}
+
 body {
   background-color: #FFFFFF;
   color: #323338;
@@ -143,4 +153,66 @@ a:focus { outline: 2px solid #05676e; }
 .button.email-button:hover {
   background-color: #323338;
   color: #FFFFFF;
+}
+
+/* General screenshot section styling */
+section img {
+  max-width: 100%;   /
+  height: auto;      
+  display: block;    
+  margin: 10px auto;
+} 
+
+section.screenshots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive grid */
+  gap: 15px;
+}
+
+section.screenshots img {
+  width: 100%;  /* fills grid column */
+  border-radius: 10px;
+}
+
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto; /* centers the container */
+}
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  text-align: center;
+  background-color: #516287;
+  padding: 10px 0;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }

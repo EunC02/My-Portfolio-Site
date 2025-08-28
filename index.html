@@ -12,87 +12,78 @@
 
 <body>
     <!-- Header -->
-     <section id="header"></section>
-    <header>
-            <nav>
-        <a href="index.html">
-            <img src="/Users/eun/Desktop/Porfolio Site (Ji Eun Chang)/img/Ji Eun Chang Logo 2.png" alt="Ji Eun Chang Logo" class="logo" width="100">
-        </a>
-        <ul>
-            <li><a href="index.html" class="button work">My Work</a></li>
-            <li><a href="about.html" class="button about">About Me</a></li>
-            <li><a href="contact.html" class="button contact">Contact Me</a>
-</li>
-        </ul>
-    </nav>
-    </header>
+     <section id="header">
+        <nav>
+            <a href="index.html">
+                <img src="img/Ji EunChangLogo.png" alt="Ji Eun Chang Logo" class="logo" width="100">
+            </a>
+            <ul>
+                <li><a href="index.html" class="button work">My Work</a></li>
+                <li><a href="about.html" class="button about">About Me</a></li>
+                <li><a href="contact.html" class="button contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </section>
 
     <main>
         <!-- Hero Section -->
-         <section id="hero"></section>
+         <section id="hero">
         <div>
-            <div>
+            <div class="container">
                 <h2>Hi! I'm <span>Ji Eun Chang</span></h2>
                 <p>I’m a UX/Product designer with a background in psychology and an ongoing growing passion for product development and project management. This is my portfolio where I share my latest projects.</p>
             </div>
         </div>
+        </section>
 
         <!-- Work Section -->
-         <section id="work"></section>
-        <div>
-            <h2>My Work</h2>
-
-            <!-- First Project Row -->
-            <div>
-                <!-- Image Column -->
-                <div>
-                    <picture>
-                        <source srcset="/Users/eun/Desktop/Porfolio Site (Ji Eun Chang)/img/Olive/JPG/Small/First Page Small.jpeg" media="(max-width:767px)">
-                        <img src="/Users/eun/Desktop/Porfolio Site (Ji Eun Chang)/img/Olive/JPG/Large/First Page.jpeg" alt="Olive Mental Health App case study">
-                    </picture> 
+         <section id="work">
+            <div class="container">
+                <h2>My Work</h2>
+                
+                <!-- First Project -->
+                 <div class="row">
+                    <div class="column">
+                        <picture>
+                            <source srcset="img/Olive/JPG/Small/FirstPageSmall.jpeg" media="(max-width:767px)">
+                            <img src="img/Olive/JPG/Large/FirstPage.jpeg" alt="Olive Mental Health App Mockups">
+                        </picture>
+                    </div>
+                    <div class="column">
+                        <h3>Olive Mental Health App</h3>
+                        <p>A mental health app designed for accessibility and emotional safety.</p>
+                        <p><b>Skills:</b> UX Research, Wireframing, Prototyping</p>
+                        <a href="olive.html">Read more</a>
+                    </div>
                 </div>
-                <!-- Text Column -->
-                <div>
-                    <h3>Olive Mental Health App</h3>
-                    <p>A mental health app designed for accessibility and emotional safety.</p>
-                    <p><b>Skills:</b> UX Research, Wireframing, Prototyping</p>
-                    <a href="olive.html">Read more</a>
-                </div>
-            </div>
-        </div>
-        <div>
-           <!-- Second Project Row -->
-            <div>
-                <!-- Image Column -->
-                <div>
-                    <picture>
-                        <source srcset="/Users/eun/Desktop/Porfolio Site (Ji Eun Chang)/img/Letn/Small/Letn - First Page Small.jpeg" media="(max-width:767px)">
-                        <img src="/Users/eun/Desktop/Porfolio Site (Ji Eun Chang)/img/Letn/Large/Letn - First Page.jpeg" alt="My Image">
-                      </picture>
-                </div>
-                <!-- Text Column -->
-                <div>
-                    <h3>Letn Campus App</h3>
-                    <p>A closed-group student social app for Canadian universities.</p>
-                    <p><b>Skills:</b> Project Management, Product Design, UX Research, Wireframing, Prototyping, Marketing, Sales</p>
-                    <a href="letn.html">Read more</a>
+                <!-- Second Project Row -->
+                 <div class="row">
+                    <div class="column">
+                        <picture>
+                            <source srcset="img/Letn/Small/LetnFPSmall.jpeg" media="(max-width:767px)">
+                            <img src="img/Letn/Large/LetnFP.jpeg" alt="Letn Campus App Mockups">
+                        </picture>
+                    </div>
+                     <div class="column">
+                        <h3>Letn Campus App</h3>
+                        <p>A closed-group student social app for Canadian universities.</p>
+                        <p><b>Skills:</b> Project Management, Product Design, UX Research, Wireframing, Prototyping, Marketing, Sales</p>
+                        <a href="letn.html">Read more</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </section>
 
     <!-- Footer -->
-     <section id="footer"></section>
-    <footer>
+     <section id="footer">
         <div>
             <h2>Get in Touch</h2>
             <p>Want to discuss further steps and opportunities? Please get in touch! </p>
-                <p>Call: 
-                <a href="tel:+821012345678">+82 10-1234-5678</p> <p></a> Prefer sending an email?
-            </p>
-            <div>
-                <a href="mailto:02jieunchang@gmail.com">Email me</a></p>
-            </div>
+                <p>Call: <a href="tel:+821012345678">+82 10-1234-5678</a></p>
+                <p>Prefer sending an email?</p>
+                <div>
+                    <a href="mailto:02jieunchang@gmail.com">Email me</a>
+                </div>
 
             <!-- Social Icons -->
             <ul>
@@ -115,6 +106,6 @@
             </ul>
             <p>&copy; 2025 Ji Eun Chang. All rights reserved.</p>
         </div>
-    </footer>
+    </section>
 </body>
 </html>
