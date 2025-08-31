@@ -11,23 +11,25 @@
       </head>
 
 <body>
-    <!-- Header -->
-     <section id="header"></section>
-    <header>
-        <nav>
-            <h1>Ji Eun Chang's Portfolio</h1>
-            <!-- Navigation links go here -->
+        <!-- Header -->
+     <section id="header">
+        <div class="container">
+            <a href="index.html">
+                <img src="img/Ji EunChangLogo.png" alt="Ji Eun Chang Logo" class="logo" width="100">
+            </a>
+            <nav>
             <ul>
                 <li><a href="index.html" class="button work">My Work</a></li>
                 <li><a href="about.html" class="button about">About Me</a></li>
-                <li><a href="contact.html" class="button contact">Contact Me</a>
-              </ul>
+                <li><a href="contact.html" class="button contact">Contact Me</a></li>
+            </ul>
         </nav>
-    </header>
-
+        </div>
+    </section>
+    
     <main>
         <!-- Hero Section -->
-         <section id="hero">
+         <section id="hero" class="hero-compact">
           <div class="container">
             <h2>About Me</h2>
           </div>
@@ -43,9 +45,9 @@
         </section>
       
         <!-- My Story + Skills/Tools -->
-        <div class="content-block row">
+        <div class="content-block">
           <!-- Column 1: My Story -->
-          <div class="column">
+          <div class="container">
             <h2>My Story</h2>
             <p>Hi, I’m Ji Eun Chang, a UX designer passionate about building digital products that feel intuitive and supportive...</p>
             <p>My background in psychology helps me understand users deeply, and my design journey has included projects like Olive, a mental health app, and LETN, a student community app.</p>
@@ -53,12 +55,14 @@
           </div>
       
           <!-- Column 2: Skills & Tools -->
-          <div class="column">
+          <div class="content-block">
+            <div class="container">
             <h2>Skills & Tools</h2>
             
             <!-- Subcolumns -->
+             <div class="skills-list-container">
             <div class="row">
-              <div class="column">
+              <div class="column-50">
                 <h3>Relevant Skills</h3>
                 <ul>
                   <li>User Research</li>
@@ -68,7 +72,7 @@
                 </ul>
               </div>
               
-              <div class="column">
+              <div class="column-50">
                 <h3>Tools I Use</h3>
                 <ul>
                   <li>Figma</li>
@@ -80,21 +84,21 @@
             </div>
           </div>
         </div>
+        </div>
+        </div>
       </main>
       
 
-    <!-- Footer -->
-     <section id="footer"></section>
-    <footer>
+     <!-- Footer -->
+     <section id="footer">
         <div>
             <h2>Get in Touch</h2>
             <p>Want to discuss further steps and opportunities? Please get in touch! </p>
-                <p>Call: 
-                <a href="tel:+821012345678">+82 10-1234-5678</p> <p></a> Prefer sending an email?
-            </p>
-            <div>
-                <a href="mailto:02jieunchang@gmail.com" class="button email-button">Email me</a></p>
-            </div>
+                <p>Call: <a href="tel:+821012345678">+82 10-1234-5678</a></p>
+                <p>Prefer sending an email?</p>
+                <div>
+                    <a href="mailto:02jieunchang@gmail.com">Email me</a>
+                </div>
 
             <!-- Social Icons -->
             <ul>
@@ -117,6 +121,6 @@
             </ul>
             <p>&copy; 2025 Ji Eun Chang. All rights reserved.</p>
         </div>
-    </footer>
+    </section>
 </body>
 </html>
