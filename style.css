@@ -67,8 +67,8 @@ img {
 }
 
 #header .logo {
-  max-width: 250px;
-  margin: 0 auto;
+  max-width: 100px;
+  margin: 0 ;
   display: block;
 }
 
@@ -100,6 +100,13 @@ img {
 #header nav ul li a:hover {
   background-color: #516287;
   color: #E5F1FF;
+}
+
+.navtoggle .icon {
+  color: #19284D;
+  background-color: #FFFFFF; 
+  padding: 8px;
+  border-radius: 4px;
 }
 
 /* Hero Section */
@@ -339,6 +346,10 @@ svg {
   gap: 20px;
 }
 
+#contact svg {
+  width: 32px;
+  height: 32px;
+}
 
 /* Buttons */
 .button {
@@ -390,7 +401,7 @@ a:hover {
 
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
-#header .container {
+#header .navtoggle {
   display: flex;
   justify-content: space-between;
   align-items: center; 
@@ -417,3 +428,57 @@ a:hover {
   }
 }
 
+/* Mobile Navigation Logic */
+
+#header .navtoggle li:not(:last-child) {
+    display: none;
+}
+
+#header .navtoggle li:last-child {
+    display: block;
+}
+
+#header .navtoggle {
+    position: relative;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;  
+}
+
+#header .navtoggle .icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #516287; 
+}
+
+
+#header .navtoggle.responsive ul {
+    display: block;
+    padding-top: 30px;
+}
+
+#header .navtoggle.responsive li {
+    display: block; 
+    text-align: center;
+}
+
+
+/* --- On desktop screens (640px and wider) --- */
+@media (min-width: 640px) {
+    #header .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    #header .navtoggle li:last-child {
+        display: none;
+    }
+
+    #header nav ul {
+        display: flex;
+        justify-content: center; 
+        gap: 10px;
+    }
+}
