@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <title>About Me - Ji Eun Chang</title>
       </head>
 
@@ -14,16 +15,23 @@
         <!-- Header -->
      <section id="header">
         <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
             <a href="index.html">
                 <img src="img/Ji EunChangLogo.png" alt="Ji Eun Chang Logo" class="logo" width="100">
             </a>
             <nav>
-            <ul>
-                <li><a href="index.html" class="button work">My Projects</a></li>
-                <li><a href="about.html" class="button about">About Me</a></li>
-                <li><a href="contact.html" class="button contact">Contact Me</a></li>
-            </ul>
-        </nav>
+                <ul>
+                    <li><a href="index.html" class="button work">My Projects</a></li>
+                    <li><a href="about.html" class="button about">About Me</a></li>
+                    <li><a href="contact.html" class="button contact">Contact Me</a></li>
+                    <li>
+                    <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    </li>
+                </ul>
+                </nav>
+            </div>
         </div>
     </section>
     
@@ -119,5 +127,8 @@
             <p>&copy; 2025 Ji Eun Chang. All rights reserved.</p>
         </div>
     </section>
-</body>
+</body><script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </html>
