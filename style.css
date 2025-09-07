@@ -90,7 +90,7 @@ img {
 #header nav ul li a {
   text-transform: uppercase;
   font-weight: bold;
-  color: #516287;
+  color: #19284D;
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 5px;
@@ -98,8 +98,8 @@ img {
 }
 
 #header nav ul li a:hover {
-  background-color: #516287;
-  color: #E5F1FF;
+  background-color: #19284D;
+  color: #FFFFFF;
 }
 
 .navtoggle .icon {
@@ -273,7 +273,6 @@ svg {
 .Olive-button {
   display: inline-block;
   margin-top: 25px;
-  padding
 }
 
 .Letn-button {
@@ -354,7 +353,7 @@ svg {
 /* Buttons */
 .button {
   background-color: #FFFFFF;
-  color: #323338; 
+  color: #19284D; 
   border: 1px solid #323338;
   font-weight: 400;
   text-decoration: none;

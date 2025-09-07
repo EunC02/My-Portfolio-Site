@@ -1,147 +1,257 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <title>Ji Eun Chang | UX/UI Designer Portfolio</title>
-    </head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Ji Eun Chang | UX/UI Designer Portfolio</title>
+  </head>
+  <body>
     <!-- Header -->
-     <section id="header">
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-            <a href="index.html">
-                <img src="img/Ji EunChangLogo.png" alt="Ji Eun Chang Logo" class="logo" width="100">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="button work">My Projects</a></li>
-                    <li><a href="about.html" class="button about">About Me</a></li>
-                    <li><a href="contact.html" class="button contact">Contact Me</a></li>
-                    <li>
-                    <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                    </li>
-                </ul>
-                </nav>
-            </div>
+    <section id="header">
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html">
+            <img
+              src="img/Ji EunChangLogo.png"
+              alt="Ji Eun Chang Logo"
+              class="logo"
+              width="100"
+            />
+          </a>
+          <nav>
+            <ul>
+              <li><a href="index.html" class="button work">My Projects</a></li>
+              <li><a href="about.html" class="button about">About Me</a></li>
+              <li>
+                <a href="contact.html" class="button contact">Contact Me</a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                >
+                  <i class="fas fa-bars"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </section>
 
     <main>
-        <!-- Hero Section -->
-         <section id="hero">
+      <!-- Hero Section -->
+      <section id="hero">
         <div>
-            <div class="container">
-                <h2>Hi! I'm <span>Ji Eun Chang</span></h2>
-                <p>I’m a UX/Product designer with a background in psychology and an ongoing growing passion for product development and project management. This is my portfolio where I share my latest projects.</p>
-            </div>
+          <div class="container">
+            <h2>Hi! I'm <span>Ji Eun Chang</span></h2>
+            <p>
+              I’m a UX/Product designer with a background in psychology and an
+              ongoing growing passion for product development and project
+              management. This is my portfolio where I share my latest projects.
+            </p>
+          </div>
         </div>
-        </section>
+      </section>
 
-        <!-- Work Section -->
-         <section id="work">
-            <div class="container">
-                <h2>My Projects</h2>
-                
-                <!-- First Project -->
-                 <div class="row">
-                    <div class="column-50">
-                        <picture>
-                            <source srcset="img/Olive/JPG/Small/FirstPageSmall.jpeg" media="(max-width:767px)">
-                            <img src="img/Olive/JPG/Large/FirstPage.jpeg" alt="Olive Mental Health App Mockups">
-                        </picture>
-                    </div>
-                    <div class="column-50">
-                        <h3>Olive Mental Health App</h3>
-                        <p>A mental health app designed for accessibility and emotional safety.</p>
-                        <p><b>Skills:</b> UX Research, Wireframing, Prototyping</p>
-                        <a href="olive.html" class="button Olive-button">Read more</a>
-                    </div>
-                </div>
+      <!-- Work Section -->
+      <section id="work">
+        <div class="container">
+          <h2>My Projects</h2>
 
-                <!-- Second Project Row -->
-                 <div class="row">
-                    <div class="column-50">
-                        <picture>
-                            <source srcset="img/Letn/Small/LetnFirstPageSmall.jpeg" media="(max-width:767px)">
-                            <img src="img/Letn/Large/LetnFirstPage.jpeg" alt="Letn Campus App Mockups">
-                        </picture>
-                    </div>
-                     <div class="column-50">
-                        <h3>Letn Campus App</h3>
-                        <p>A closed-group student social app for Canadian universities.</p>
-                        <p><b>Skills:</b> Project Management, Product Design, UX Research, Wireframing, Prototyping, Marketing, Sales</p>
-                        <a href="letn.html" class="button Letn-button">Read more</a>
-                    </div>
-                </div>
-                <!-- SVG Animation -->
-                 <div class="row">
-                    <div class="column-50">
-                        <svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_532_1355)">
-                        <circle id="top-circle" cx="68" cy="14" r="36" fill="#516287"/>
-                        <circle cx="14" cy="72" r="36" fill="#E5F1FF"/>
-                        <path id="crescent" d="M50.5251 21.5C47.7931 25.7698 46.4188 30.767 46.5834 35.8333C53.3918 35.475 58.4084 33.6833 61.9918 30.8167C65.5751 27.2333 67.7251 22.575 68.0834 14.3333C58.4084 14.6917 53.7501 17.9167 50.5251 21.5Z" stroke="white" stroke-width="7.16667" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path id="swoosh" d="M35.8333 71.6666C55.5416 62.7083 38.7 48.7333 46.5833 35.8333" stroke="black" stroke-width="7.16667" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M34.0416 33.6833C37.9833 36.5499 40.4916 41.5666 42.2833 46.9416C35.1166 48.3749 29.7416 48.3749 25.0833 45.8666C20.7833 43.7166 16.8416 39.0583 14.3333 30.8166C24.3666 29.0249 30.1 30.8166 34.0416 33.6833Z" stroke="#19284D" stroke-width="7.16667" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M25.0833 71.6667H60.9166" stroke="#323338" stroke-width="7.16667" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_532_1355">
-                        <rect width="86" height="86" fill="white"/>
-                        </clipPath>
-                        </defs>
-                        </svg>
-   
-                    </div>
-                     <div class="column-50">
-                        <h3>CSS Animation</h3>
-                        <p>This is an example of a SVG image animated with keyframes.</p>
-                    </div>
-                </div>
+          <!-- First Project -->
+          <div class="row">
+            <div class="column-50">
+              <picture>
+                <source
+                  srcset="img/Olive/JPG/Small/FirstPageSmall.jpeg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/Olive/JPG/Large/FirstPage.jpeg"
+                  alt="Olive Mental Health App Mockups"
+                />
+              </picture>
             </div>
-        </section>
+            <div class="column-50">
+              <h3>Olive Mental Health App</h3>
+              <p>
+                A mental health app designed for accessibility and emotional
+                safety.
+              </p>
+              <p><b>Skills:</b> UX Research, Wireframing, Prototyping</p>
+              <a href="olive.html" class="button Olive-button">Read more</a>
+            </div>
+          </div>
+
+          <!-- Second Project Row -->
+          <div class="row">
+            <div class="column-50">
+              <picture>
+                <source
+                  srcset="img/Letn/Small/LetnFirstPageSmall.jpeg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/Letn/Large/LetnFirstPage.jpeg"
+                  alt="Letn Campus App Mockups"
+                />
+              </picture>
+            </div>
+            <div class="column-50">
+              <h3>Letn Campus App</h3>
+              <p>
+                A closed-group student social app for Canadian universities.
+              </p>
+              <p>
+                <b>Skills:</b> Project Management, Product Design, UX Research,
+                Wireframing, Prototyping, Marketing, Sales
+              </p>
+              <a href="letn.html" class="button Letn-button">Read more</a>
+            </div>
+          </div>
+          <!-- SVG Animation -->
+          <div class="row">
+            <div class="column-50">
+              <svg
+                width="86"
+                height="86"
+                viewBox="0 0 86 86"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_532_1355)">
+                  <circle
+                    id="top-circle"
+                    cx="68"
+                    cy="14"
+                    r="36"
+                    fill="#516287"
+                  />
+                  <circle cx="14" cy="72" r="36" fill="#E5F1FF" />
+                  <path
+                    id="crescent"
+                    d="M50.5251 21.5C47.7931 25.7698 46.4188 30.767 46.5834 35.8333C53.3918 35.475 58.4084 33.6833 61.9918 30.8167C65.5751 27.2333 67.7251 22.575 68.0834 14.3333C58.4084 14.6917 53.7501 17.9167 50.5251 21.5Z"
+                    stroke="white"
+                    stroke-width="7.16667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    id="swoosh"
+                    d="M35.8333 71.6666C55.5416 62.7083 38.7 48.7333 46.5833 35.8333"
+                    stroke="black"
+                    stroke-width="7.16667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M34.0416 33.6833C37.9833 36.5499 40.4916 41.5666 42.2833 46.9416C35.1166 48.3749 29.7416 48.3749 25.0833 45.8666C20.7833 43.7166 16.8416 39.0583 14.3333 30.8166C24.3666 29.0249 30.1 30.8166 34.0416 33.6833Z"
+                    stroke="#19284D"
+                    stroke-width="7.16667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M25.0833 71.6667H60.9166"
+                    stroke="#323338"
+                    stroke-width="7.16667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clippath id="clip0_532_1355">
+                    <rect width="86" height="86" fill="white" />
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+            <div class="column-50">
+              <h3>CSS Animation</h3>
+              <p>This is an example of a SVG image animated with keyframes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
-     <section id="footer">
-        <div>
-            <h2>Get in Touch</h2>
-            <p>Want to discuss further steps and opportunities?</p>
-                <p><b>Call Me: </b><a href="tel:+821012345678">+82 10-1234-5678</a></p>
-                <p><b>Email Me: </b><a href="mailto:email@emailaddress.com">email@emailaddress.com</a></p>
+    <section id="footer">
+      <div>
+        <h2>Get in Touch</h2>
+        <p>Want to discuss further steps and opportunities?</p>
+        <p><b>Call Me: </b><a href="tel:+821012345678">+82 10-1234-5678</a></p>
+        <p>
+          <b>Email Me: </b
+          ><a href="mailto:email@emailaddress.com">email@emailaddress.com</a>
+        </p>
 
-            <!-- Social Icons -->
-            <ul>
-                <!-- LinkedIn -->
-                 <li>
-                    <a href="https://www.linkedin.com/in/ji-eun-chang-psyc/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M4.98 3.5C4.98 5 3.9 6.1 2.5 6.1 1.1 6.1 0 5 0 3.5 0 2 1.1.9 2.5.9c1.4 0 2.48 1.1 2.48 2.6zM.25 24h4.5V7.9H.25V24zM8.48 7.9h4.3v2.2h.06c.6-1.1 2-2.2 4.1-2.2 4.4 0 5.2 2.9 5.2 6.6V24h-4.5v-7.2c0-1.7-.03-3.9-2.4-3.9-2.4 0-2.8 1.8-2.8 3.8V24h-4.5V7.9z"/>
-                        </svg>
-                    </a>
-                </li>      
-                <!-- GitHub -->
-                <li>
-                    <a href="https://github.com/EunC02" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.8.1 1.8-.7.1-.7.4-1.1.8-1.3-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a10.7 10.7 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.3.9 1 .9 2v3c0 .4.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <p>&copy; 2025 Ji Eun Chang. All rights reserved.</p>
-        </div>
+        <!-- Social Icons -->
+        <ul>
+          <!-- LinkedIn -->
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ji-eun-chang-psyc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4.98 3.5C4.98 5 3.9 6.1 2.5 6.1 1.1 6.1 0 5 0 3.5 0 2 1.1.9 2.5.9c1.4 0 2.48 1.1 2.48 2.6zM.25 24h4.5V7.9H.25V24zM8.48 7.9h4.3v2.2h.06c.6-1.1 2-2.2 4.1-2.2 4.4 0 5.2 2.9 5.2 6.6V24h-4.5v-7.2c0-1.7-.03-3.9-2.4-3.9-2.4 0-2.8 1.8-2.8 3.8V24h-4.5V7.9z"
+                />
+              </svg>
+            </a>
+          </li>
+          <!-- GitHub -->
+          <li>
+            <a
+              href="https://github.com/EunC02"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.8.1 1.8-.7.1-.7.4-1.1.8-1.3-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a10.7 10.7 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.3.9 1 .9 2v3c0 .4.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p>&copy; 2025 Ji Eun Chang. All rights reserved.</p>
+      </div>
     </section>
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
-        crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/scripts.js"></script>
 </html>
