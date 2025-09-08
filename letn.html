@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <title>Olive Mental Health App</title>
-  </head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Letn App</title>
+</head>
   <body>
     <!-- Header -->
-    <section id="header">
+    <header id="header">
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
           <a href="index.html">
             <img
-              src="img/Ji EunChangLogo.png"
+              src="img/JiEunChangLogo.png"
               alt="Ji Eun Chang Logo"
               class="logo"
               width="100"
-            />
+            >
           </a>
           <nav>
             <ul>
@@ -50,26 +45,24 @@
           </nav>
         </div>
       </div>
-    </section>
+    </header>
 
     <main>
       <!-- Hero Section -->
       <section id="hero">
-        <section>
-          <h2>About the Project</h2>
-          <img
-            src="img/Letn/Small/Png/LetnLogo.png"
-            alt="Letn Logo"
-            class="img"
-            width="5"
-          />
-          <p>
-            Step into a smarter, more connected student life with Letn. It's
-            your one-stop app to stay organised, link up with friends, and keep
-            up with everything happening on campus. Whether you're planning your
-            week or finding your next flatmate, Letn helps you thrive.
-          </p>
-        </section>
+        <h2>About the Project</h2>
+        <img
+          src="img/Letn/Small/Png/LetnLogo.png"
+          alt="Letn Logo"
+          class="img"
+          width="5"
+        >
+        <p>
+          Step into a smarter, more connected student life with Letn. It's your
+          one-stop app to stay organised, link up with friends, and keep up with
+          everything happening on campus. Whether you're planning your week or
+          finding your next flatmate, Letn helps you thrive.
+        </p>
       </section>
 
       <!-- Process-->
@@ -94,18 +87,18 @@
         </div>
         <div class="content-block" id="olive-screenshots">
           <div class="container">
-            <img src="img/Letn/Large/Png/Dashboard.png" alt="Letn Dashboard" />
-            <img src="img/Letn/Large/Png/Timetable.png" alt="Timetable" />
-            <img src="img/Letn/Large/Png/LetOn.png" alt="Let On" />
-            <img src="img/Letn/Large/Png/Lounge.png" alt="Lounge" />
-            <img src="img/Letn/Large/Png/Market.png" alt="Market" />
+            <img src="img/Letn/Large/Png/Dashboard.png" alt="Letn Dashboard">
+            <img src="img/Letn/Large/Png/Timetable.png" alt="Timetable">
+            <img src="img/Letn/Large/Png/LetOn.png" alt="Let On">
+            <img src="img/Letn/Large/Png/Lounge.png" alt="Lounge">
+            <img src="img/Letn/Large/Png/Market.png" alt="Market">
           </div>
         </div>
       </div>
     </main>
 
     <!-- Footer -->
-    <section id="footer">
+    <footer id="footer">
       <div>
         <h2>Get in Touch</h2>
         <p>Want to discuss further steps and opportunities?</p>
@@ -162,6 +155,23 @@
         </ul>
         <p>&copy; 2025 Ji Eun Chang. All rights reserved.</p>
       </div>
-    </section>
+    </footer>
+    <script>
+      function menuToggle() {
+        var nav = document.getElementById("myNavtoggle");
+        nav.classList.toggle("responsive");
+      }
+
+      document.addEventListener("click", function (event) {
+        var navToggle = document.getElementById("myNavtoggle");
+
+        var isClickInsideNav = navToggle.contains(event.target);
+        var isMenuOpen = navToggle.classList.contains("responsive");
+
+        if (isMenuOpen && !isClickInsideNav) {
+          navToggle.classList.remove("responsive");
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    >
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <title>Ji Eun Chang | UX/UI Designer Portfolio</title>
+    >
+    <title>Ji Eun Chang | UX / Product Designer Portfolio</title>
   </head>
   <body>
     <!-- Header -->
-    <section id="header">
+    <header id="header">
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
           <a href="index.html">
             <img
-              src="img/Ji EunChangLogo.png"
+              src="img/JiEunChangLogo.png"
               alt="Ji Eun Chang Logo"
               class="logo"
               width="100"
-            />
+            >
           </a>
           <nav>
             <ul>
@@ -49,14 +49,15 @@
           </nav>
         </div>
       </div>
-    </section>
+    </header>
 
     <main>
       <!-- Hero Section -->
       <section id="hero">
         <div>
           <div class="container">
-            <h2>Hi! I'm <span>Ji Eun Chang</span></h2>
+            <h2>Hi! I'm</h2>
+            <h1>Ji Eun Chang</h1>
             <p>
               I’m a UX/Product designer with a background in psychology and an
               ongoing growing passion for product development and project
@@ -78,11 +79,11 @@
                 <source
                   srcset="img/Olive/JPG/Small/FirstPageSmall.jpeg"
                   media="(max-width:767px)"
-                />
+                >
                 <img
                   src="img/Olive/JPG/Large/FirstPage.jpeg"
                   alt="Olive Mental Health App Mockups"
-                />
+                >
               </picture>
             </div>
             <div class="column-50">
@@ -103,11 +104,11 @@
                 <source
                   srcset="img/Letn/Small/LetnFirstPageSmall.jpeg"
                   media="(max-width:767px)"
-                />
+                >
                 <img
                   src="img/Letn/Large/LetnFirstPage.jpeg"
                   alt="Letn Campus App Mockups"
-                />
+                >
               </picture>
             </div>
             <div class="column-50">
@@ -189,10 +190,10 @@
     </main>
 
     <!-- Footer -->
-    <section id="footer">
+    <footer id="footer">
       <div>
         <h2>Get in Touch</h2>
-        <p>Want to discuss further steps and opportunities?</p>
+        <h4>Want to discuss further steps and opportunities?</h4>
         <p><b>Call Me: </b><a href="tel:+821012345678">+82 10-1234-5678</a></p>
         <p>
           <b>Email Me: </b
@@ -246,12 +247,31 @@
         </ul>
         <p>&copy; 2025 Ji Eun Chang. All rights reserved.</p>
       </div>
-    </section>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/scripts.js"></script>
+
+    <script>
+      function menuToggle() {
+        var nav = document.getElementById("myNavtoggle");
+        nav.classList.toggle("responsive");
+      }
+
+      document.addEventListener("click", function (event) {
+        var navToggle = document.getElementById("myNavtoggle");
+
+        var isClickInsideNav = navToggle.contains(event.target);
+        var isMenuOpen = navToggle.classList.contains("responsive");
+
+        if (isMenuOpen && !isClickInsideNav) {
+          navToggle.classList.remove("responsive");
+        }
+      });
+    </script>
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"
-  ></script>
-  <script src="js/scripts.js"></script>
 </html>
